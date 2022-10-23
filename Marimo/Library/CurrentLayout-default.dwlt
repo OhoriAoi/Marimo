@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 18384
+  controlID: 41
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 18385
+  controlID: 42
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 18406
+  controlID: 85
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 18301
+  controlID: 132
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -414,7 +414,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
       y: 21
       width: 855
       height: 431
-    m_Scale: {x: 0.53875, y: 0.53875}
+    m_Scale: {x: 0.565, y: 0.565}
     m_Translation: {x: 427.5, y: 215.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -435,12 +435,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -793.5035
-      y: -400
-      width: 1587.007
-      height: 800
+      x: -756.63715
+      y: -381.41592
+      width: 1513.2743
+      height: 762.83185
     m_MinimalGUI: 1
-  m_defaultScale: 0.53875
+  m_defaultScale: 0.565
   m_LastWindowPixelSize: {x: 855, y: 452}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -478,12 +478,12 @@ MonoBehaviour:
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 0
   m_SceneLighting: 1
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 670.6267, y: 21.323734, z: 2.4537563}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 670.6267, y: 21.323734, z: 2.4537563}
   m_RenderMode: 0
@@ -514,7 +514,7 @@ MonoBehaviour:
       m_Size: {x: 0, y: 0}
     yGrid:
       m_Fade:
-        m_Target: 1
+        m_Target: 0
         speed: 2
         m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
@@ -522,9 +522,9 @@ MonoBehaviour:
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 0
+        m_Target: 1
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -532,17 +532,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.058769803, y: 0.014072928, z: -0.0008296818, w: -0.9981782}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0.058769446, y: 0.014072842, z: -0.00082967675, w: -0.9981721}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 42.639626
+    m_Target: 10
     speed: 2
     m_Value: 42.639626
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 1.1204399
     m_SpeedNormalized: 0.55999994
@@ -677,9 +677,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f84c0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c259feff980affffb20affffb60affffd20dffff5423ffff5823ffff80caffff78cdffff2ed0ffff86d5ffff74d9fffface0ffff72e7ffff9af3ffff5efaffff7afaffff70fbffffc6530000
+      m_ExpandedIDs: 52faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -741,22 +741,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Saito/Scenes
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Saito/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: "C:\\Users\\ohori\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\CA1DayHackDay"
+  m_LastProjectPath: D:\Unity\Slfe made game\Marimo\Marimo
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 180}
-    m_SelectedIDs: f6440000
-    m_LastClickedID: 17654
-    m_ExpandedIDs: 00000000d0440000d2440000d4440000d6440000d8440000da440000dc440000de44000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 22580000
+    m_LastClickedID: 22562
+    m_ExpandedIDs: 000000002258000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -784,7 +784,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d0440000d2440000d4440000d6440000d8440000da440000dc440000de44000000ca9a3b
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
