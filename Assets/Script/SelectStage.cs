@@ -9,7 +9,7 @@ public class SelectStage : MonoBehaviour
 
     private void Start()
     {
-        NumberOfStages = 1;//ステージ数は1
+        NumberOfStages = 2;//ステージ数は1
         for(int Lp = 0; Lp < NumberOfStages; Lp++)//ステージの数だけ繰り返す
         {
             Stage[Lp] = false;//ステージの選択の初期化
