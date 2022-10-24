@@ -25,7 +25,6 @@ public class TransitionManagement : MonoBehaviour
     void Start()
     {
         transitionMode = TransitionMode.TitleMode;//タイトル画面
-        selectStage = GetComponent<SelectStage>();
     }
 
     // Update is called once per frame
@@ -47,7 +46,8 @@ public class TransitionManagement : MonoBehaviour
     private void ToSelectStage()//ステージ選択画面へ移動する関数
     {
         SceneManager.LoadScene("SelectStage");//ステージ選択画面へ移動
-        transitionMode = TransitionMode.SelectStageMode;//ステージ選択画面 
+        transitionMode = TransitionMode.SelectStageMode;//ステージ選択画面 //ステージ1画面へ移動する関数
+        selectStage = GameObject.FindGameObjectWithTag("SelectStageControl").GetComponent<SelectStage>();
     }
 
     private void ToStage1()//ステージ1画面へ移動する関数
