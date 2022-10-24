@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TransitionManagement : MonoBehaviour
 {
+    private SelectStage selectStage;//ステージを選ぶスクリプト
+
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject); //ロード後もこのオブジェクトを消さない
@@ -16,11 +18,14 @@ public class TransitionManagement : MonoBehaviour
         SelectStageMode,   //ステージ選択画面  
         Stage1Mode,//ステージ1画面
     }
-    TransitionMode transitionMode;
+
+    TransitionMode transitionMode;//画面モードの変数
+
     // Start is called before the first frame update
     void Start()
     {
         transitionMode = TransitionMode.TitleMode;//タイトル画面
+        selectStage = GetComponent<SelectStage>();
     }
 
     // Update is called once per frame
@@ -33,11 +38,21 @@ public class TransitionManagement : MonoBehaviour
                 ToSelectStage();//ステージ選択画面へ移動する関数
             }
         }
+        if (selectStage.Stage[0])//ステージ1が選択された場合
+        {
+            ToStage1();//ステージ1画面へ移動する関数
+        }
     }
 
     private void ToSelectStage()//ステージ選択画面へ移動する関数
     {
         SceneManager.LoadScene("SelectStage");//ステージ選択画面へ移動
         transitionMode = TransitionMode.SelectStageMode;//ステージ選択画面 
+    }
+
+    private void ToStage1()//ステージ1画面へ移動する関数
+    {
+        SceneManager.LoadScene("Stage1");//ステージ1画面へ移動
+        transitionMode = TransitionMode.Stage1Mode;//ステージ選択画面 
     }
 }
