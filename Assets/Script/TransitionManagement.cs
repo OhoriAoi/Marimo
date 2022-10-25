@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class TransitionManagement : MonoBehaviour
 {
-    private SelectStage selectStage;//ステージを選ぶスクリプト
 
     void Awake()
     {
@@ -17,6 +16,9 @@ public class TransitionManagement : MonoBehaviour
         TitleMode,      //タイトル画面
         SelectStageMode,   //ステージ選択画面  
         Stage1Mode,//ステージ1画面
+        Stage2Mode,//ステージ2画面
+        Stage3Mode,//ステージ3画面
+        Stage4Mode,//ステージ4画面
     }
 
     TransitionMode transitionMode;//画面モードの変数
@@ -37,22 +39,32 @@ public class TransitionManagement : MonoBehaviour
                 ToSelectStage();//ステージ選択画面へ移動する関数
             }
         }
-        if (selectStage.Stage[0])//ステージ1が選択された場合
-        {
-            ToStage1();//ステージ1画面へ移動する関数
-        }
     }
 
     private void ToSelectStage()//ステージ選択画面へ移動する関数
     {
         SceneManager.LoadScene("SelectStage");//ステージ選択画面へ移動
-        transitionMode = TransitionMode.SelectStageMode;//ステージ選択画面 //ステージ1画面へ移動する関数
-        selectStage = GameObject.FindGameObjectWithTag("SelectStageControl").GetComponent<SelectStage>();
+        transitionMode = TransitionMode.SelectStageMode;//ステージ選択画面 
     }
 
-    private void ToStage1()//ステージ1画面へ移動する関数
+    public void ToStage1()//ステージ1画面へ移動する関数
     {
         SceneManager.LoadScene("Stage1");//ステージ1画面へ移動
         transitionMode = TransitionMode.Stage1Mode;//ステージ選択画面 
+    }
+    public void ToStage2()//ステージ2画面へ移動する関数
+    {
+        SceneManager.LoadScene("Stage2");//ステージ2画面へ移動
+        transitionMode = TransitionMode.Stage2Mode;//ステージ選択画面 
+    }
+    public void ToStage3()//ステージ3画面へ移動する関数
+    {
+        SceneManager.LoadScene("Stage3");//ステージ3画面へ移動
+        transitionMode = TransitionMode.Stage3Mode;//ステージ選択画面 
+    }
+    public void ToStage4()//ステージ4画面へ移動する関数
+    {
+        SceneManager.LoadScene("Stage4");//ステージ4画面へ移動
+        transitionMode = TransitionMode.Stage4Mode;//ステージ選択画面 
     }
 }
